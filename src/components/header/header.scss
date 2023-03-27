@@ -1,0 +1,54 @@
+@import "../../mixins.scss";
+
+
+.main-header-container{
+    background-color: rgba(33,21,33,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    height:56px;
+    color: rgba(237,30,36,1);
+    .logo-wrapper{
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 2rem;
+        }
+    }
+    .options{
+        .sub-options{
+            display: none;
+        }
+        .ham-icon{
+            display: flex;
+            flex-direction: row;
+            margin-right: 15px;
+        }
+        @include md{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right:15px;
+        justify-content: space-evenly;
+        height:100%;
+        width:1000px;
+        .sub-options{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .ham-icon{
+            display: none;
+        }
+
+        }
+        
+        span{
+            font-size: 25px;
+        }
+    }
+}
